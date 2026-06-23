@@ -8,17 +8,29 @@
 
 .explain {
     display: block;
-    background-color: rgba(155, 155, 155, 0.3);
-    backdrop-filter: blur(1px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    padding:40px;
+
 
 }
 #entrance{
     animation: fadeIn;
     animation-duration: 1500ms;
+    background-color: rgba(155, 155, 155, 0.1);
+    backdrop-filter: blur(3.3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding:40px;
     border-color: rgba(0,0,0,0);
-    border-radius: 35px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease-out, background 0.2s ease-out, backdrop-filter 0.2s ease-out;
+
+}
+#entrance:hover{
+    transform: scale(1.25);
+    background-color: rgba(155, 155, 155, 0.1);
+    backdrop-filter: blur(1px);
+
 }
 #bg {
     background-image: url(images/vain.png);
@@ -35,8 +47,6 @@
     font-size: 2.5em;
     text-align: center;
     z-index: 10 ;
-    hover: green;
-    cursor: pointer;
 }
 
 .main{
@@ -57,6 +67,15 @@
         feGaussianBlur: 100%;
         positiony: 100px 100px;
         transform: translatey(100);
+    }
+}
+@keyframes bubble {
+    from {
+        scale: 1.0;
+    }
+    to {
+        scale: 1.25;
+    }
     }
 }
 
