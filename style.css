@@ -1,3 +1,10 @@
-explain{
-    color:black;
+.explain {
+    display: block;
+    vertical-align: center;
+    text-align: center;
+    block-step-align: center;
+    margin: 400px;
+    color: hsla(0, 0%, 0%, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    font: bold 14px "JetBrains Mono", monospace;
 }
