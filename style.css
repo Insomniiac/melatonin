@@ -4,31 +4,39 @@
     overflow-y: auto;
 }
 .explain {
-    font-family: "JetBrains Mono", monospace;
-    display: block;
-    padding: 1px 3px;
-    animation: fadeIn;
-    animation-duration: 1500ms;
-    align-content: center;
 }
 
 .explain {
     display: block;
+    background-color: rgba(155, 155, 155, 0.3);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding:40px;
 
 }
-
+#entrance{
+    animation: fadeIn;
+    animation-duration: 1500ms;
+    border-color: rgba(0,0,0,0);
+    border-radius: 35px;
+}
+#bg {
+    background-image: url(images/vain.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(100%);
+    z-index: -10;
+}
 .explain h1 {
-    display: block;
+    font-family: "JetBrains Mono", monospace;
     color: black;
     text-shadow: #020302 1px 0 15px;
     font-size: 2.5em;
     text-align: center;
-    background-color: rgba(155, 155, 155, 0.3);
-    backdrop-filter: blur(1px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    padding:30px;
-    border-radius: 10px;
-    background-size: clamp(1px, 1px, 1px);
+    z-index: 10 ;
+    hover: green;
+    cursor: pointer;
 }
 
 .main{
