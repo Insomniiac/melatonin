@@ -1,3 +1,5 @@
-explain{
-    color:black;
+explain {
+    color: black;
+    font: bold 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    backdrop-filter: blur(20px);
 }
