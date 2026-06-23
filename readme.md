@@ -1,2 +1,2 @@
 hello hello!
-[https://insomniiac.github.io/melatonin/](website)
+[Website Link](https://insomniiac.github.io/melatonin/)
